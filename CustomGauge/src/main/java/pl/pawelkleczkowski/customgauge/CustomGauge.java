@@ -172,6 +172,9 @@ public class CustomGauge extends View {
 
     public void setStrokeWidth(float strokeWidth) {
         mStrokeWidth = strokeWidth;
+        if(mPaint != null) {
+            mPaint.setStrokeWidth(mStrokeWidth);
+        }
     }
 
     @SuppressWarnings("unused")
